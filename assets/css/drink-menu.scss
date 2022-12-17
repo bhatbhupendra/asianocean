@@ -1,0 +1,159 @@
+.drink-menu{
+    background-color: #ececec;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .menu-title{
+            margin: 5px;//resetting h1 margine
+            text-align: center;
+            color: #533833;
+        }
+        .menu-wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+            .food-menu-box{
+                width: 20%;
+                margin: 1%;
+                padding: 1%;
+                background-color: white;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+    
+                .food-menu-img{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 12px;
+                    img{
+                        width: 89%;
+                        border-radius: 15px;
+                        transition: all .5s;
+                        &:hover{
+                            cursor: pointer;
+                            transform: scale(1.01);
+                        }
+                    }
+                }
+                .food-menu-desc{
+                    width: 100%;
+                    padding: 10px;
+                    h3{
+                        margin: 0px;
+                        color: #6d604e;
+                    }
+                    .food-detail{
+                        font-size: 1rem;
+                        color: #747d8c;
+                        margin: 5px 0;
+                    }
+                    .price-button-wrapper{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0px 5px;
+                        .food-price{
+                            color: #6d604e;
+                            font-size: 1.2rem;
+                            margin: 5px 0;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//mobile responsive
+
+@media screen and (max-width: 768px) {
+    .drink-menu{
+        .container{
+            width: 90%;
+            .menu-title{
+                margin: 20px;//resetting h1 margine
+            }
+            .menu-wrapper{
+                .food-menu-box{
+                    width: 90%;
+                    margin: 2%;
+                    padding: 2%;
+                    .food-menu-img{
+                        width: 100%;
+                        img{
+                            width: 89%;
+                        }
+                    }
+                    .food-menu-desc{
+                        .price-button-wrapper{
+                            padding: 0px 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+//reusable code 
+
+
+
+.btn-primary-food-menu-item{
+    // background-color: #1e90ff;
+    background-color: #97856c;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 6px;
+    display: inline-block;
+    border: 0px;//no border
+    transition: all 0.4s;
+    a{
+        text-decoration: none;  
+        color: white;
+    }
+    &:hover{
+        background-color: #6d604e;
+        transform: scale(1.08);
+    }
+}
+
+
+.btn-view-more-drink{
+    background-color: #a4908c;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    margin-right: 20px; ///this is diffrent from food-menu
+    font-size: 18px;
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    float: right;
+    display: inline-block;
+    border: 0px;//no border
+    transition: all 0.4s;
+    a{
+        text-decoration: none;  
+        color: white;
+    }
+    &:hover{
+        background-color: #4d312c;
+    }
+}
+

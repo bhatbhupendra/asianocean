@@ -1,0 +1,102 @@
+.food-menu {
+  background-color: #ececec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+}
+
+.food-menu h2 {
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 0 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #ff7256;
+  color: white;
+  width: 88%;
+}
+
+.food-menu .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 30px;
+}
+
+.food-menu .wrapper img {
+  width: 40%;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+.drink-menu {
+  background-color: #ececec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.drink-menu h2 {
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 0 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #ff7256;
+  color: white;
+  width: 88%;
+}
+
+.drink-menu .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 30px;
+}
+
+.drink-menu .wrapper img {
+  width: 43%;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .food-menu .wrapper, .drink-menu .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .food-menu .wrapper img, .drink-menu .wrapper img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #f6f3f9;
+}
+
+body .form_wrapper {
+  background: #f3f3f3;
+  width: 450px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 90px 15px rgba(0, 0, 0, 0.1), 10px 20px 64px -48px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 90px 15px rgba(0, 0, 0, 0.1), 10px 20px 64px -48px rgba(0, 0, 0, 0.5);
+  padding: 15px 20px 20px 20px;
+}
+
+body .form_wrapper header {
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+
+body .form_wrapper form .name-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .form_wrapper form .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+body .form_wrapper form .field i {
+  position: absolute;
+  font-size: 15px;
+  right: 20px;
+  color: #ccc;
+  top: 34px;
+  cursor: pointer;
+}
+
+body .form_wrapper form .button_submit input {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  height: 35px;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  background: #333;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+body .form_wrapper .error-txt {
+  color: #721c24;
+  background: #f8d7da;
+  padding: 2px 8px;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #f5c6cb;
+}
+
+body .form_wrapper .link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+body .form_wrapper .link :hover {
+  text-decoration: underline;
+}
+
+#firstName, #lastName, #email, #password, #confirm_password {
+  height: 35px;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 15px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+.name-details .first_name {
+  padding-right: 8px;
+}
+
+.last_name {
+  padding-left: 8px;
+}
+
+i.active_eye::before {
+  color: #5e5e5e;
+  content: "\f070";
+}
+/*# sourceMappingURL=register.css.map */

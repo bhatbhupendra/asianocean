@@ -1,0 +1,75 @@
+.food-menu{
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    h2{
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 0 30px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background-color: #ff7256;
+        color: white;
+        width: 88%;
+    }
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 30px;
+        img{
+            // height: 900px;
+            width: 40%;
+            margin-bottom: 40px;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+.drink-menu{
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 0 30px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background-color: #ff7256;
+        color: white;
+        width: 88%;
+    }
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 30px;
+        img{
+            // height: 900px;
+            width: 43%;
+            margin-bottom: 40px;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .food-menu,.drink-menu{
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+}

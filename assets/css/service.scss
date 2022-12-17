@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+.service-section{
+    background-color: #ececec;   
+    .service-wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        font-family: 'Noto Sans JP', sans-serif;
+        .service-info{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            padding-top: 50px;
+            h1{
+                font-size: 50px;
+                color: #4d312c;
+                width: 70%;
+                margin: 0px;
+            }
+            span{
+                width: 70%;
+            }
+            .service-vector-info-link{
+                margin: 15px;
+                margin-top: 0px;
+                width: 70%;
+                text-align: center;
+                @media (max-width: 1200px){
+                    width: 100%;
+                }
+    
+                a:nth-of-type(1){
+                    display: inline-block;
+                    text-decoration: none;
+                    background-color: #f34c2b;
+                    color: white;
+                    padding: 8px;
+                    margin: 5px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    width: 45%;
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: bold;
+                    border-radius: 15px;
+                    box-shadow: -4px 4px 14px 3px rgba(80, 80, 80, .2);
+                    transition: all .5s;
+                    &:hover {
+                        transform: scale(1.05);
+                        background-color: #ff8870;
+                    }
+                }
+                a:nth-of-type(2){
+                    display: inline-block;
+                    text-decoration: none;
+                    background-color: #f34c2b;
+                    color: white;
+                    padding: 8px;
+                    margin: 5px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    width: 45%;
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: bold;
+                    border-radius: 15px;
+                    box-shadow: -4px 4px 14px 3px rgba(80, 80, 80, .2);
+                    transition: all .5s;
+                    &:hover {
+                        transform: scale(1.05);
+                        background-color: #ff8870;
+                    }
+                    
+                }
+            }
+            .service-info-vector{
+                margin: 10px;
+                width: 80%;
+                @media (max-width: 1200px){
+                    width: 100%;
+                }
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                figure:nth-of-type(1){
+                    background-image: url(../vector/support-1.png);
+                    background-size: cover;
+                    background-position: center;
+                    width: 140px;
+                    height: 140px;
+                    margin: 0px;
+                    // margin-left: 30px;
+                }
+                figure:nth-of-type(2){
+                    background-image: url(../vector/support-2.png);
+                    background-size: cover;
+                    background-position: center;
+                    width: 140px;
+                    height: 140px;
+                    margin: 0px;
+                    margin-right: 30px;
+                }
+            }
+    
+        }
+        .service-image{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 50%;
+            padding: 20px;
+            .service-image-wrapper{
+                display: flex;
+                justify-content: center;
+                width: 550px;
+                @media (max-width: 1200px){
+                    width: 100%;
+                }
+                figure {
+                    background-image: url(../images/service.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 400px;
+                    width: 550px;
+                    @media (max-width: 1200px){
+                        height: 400px;
+                        width: 450px;
+                    }
+                    @media (max-width: 950px){
+                        height: 400px;
+                        width: 400px;
+                    }
+                    box-shadow: -4px 4px 14px 3px rgba(80, 80, 80, .30);
+                    border-radius: 3px;
+                    transition: all .5s;
+                    &:hover {
+                        transform: scale(1.01);
+                    }
+                }
+            }
+        }
+        @media (max-width: 950px){
+            flex-direction: column-reverse !important;
+            .service-info{
+                width: 100%;
+                padding-top: 0px;
+                h1{
+                    width: 80%;
+                }
+                span{
+                    width: 80%;
+                }.service-vector-info-link{
+                    width: 80%;
+                }
+                .service-info-vector{
+                    width: 80%;
+                }
+            }
+            .service-image{
+                width: 100%;
+                .service-image-wrapper{
+                    figure{
+                        height: 400px;
+                        width: 550px;
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+
+//for mobile responsive
+@media (max-width: 450px){
+    .service-section{
+        .service-wrapper{
+            .service-info{
+                .service-info-vector{
+                    figure:nth-of-type(2){
+                        margin-right: 0px;
+                    }
+                }
+            }
+            .service-image{
+                .service-image-wrapper{
+                    //null
+                }
+            }
+        }
+    }
+
+}

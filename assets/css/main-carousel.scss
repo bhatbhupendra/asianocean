@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+.main-carousel{
+    .carousel-wrapper{
+        background-image: url(../images/carousel.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 60vh;
+        .info{
+            font-family: 'Noto Sans JP', sans-serif;
+            color: white;
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .small{
+                font-size: 15px;
+                margin: 0;
+                padding: 0;
+                
+            }
+            .large{
+                font-size: 50px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+    }
+}
+
+.btn-explore{
+    background-color: transparent;
+    border: 2px solid white;
+    margin: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    transition: all .5s;
+    color: white; // the color is inherieted to the a tag
+    &:hover{
+        transform: scale(1.08);
+        background-color: white;
+        color: black;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+        font-size: 20px;
+        font-weight: bolder;
+        padding : 8px 20px;
+    }
+}
+
+
+//for mobile responsive
+@media (max-width: 450px){
+    .main-carousel{
+        .carousel-wrapper{
+            .info{
+                left: 45px;
+                .small{
+                    //null
+                }
+                .large{
+                    //null
+                }
+            }
+        }
+    }
+}

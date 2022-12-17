@@ -1,0 +1,85 @@
+
+.edit{
+    display: flex;
+    justify-content: space-around;
+    .previous-data{
+        width: 40%;
+        .view{
+            border-right: .5px solid #e4e4e4;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .food-menu-box{
+                margin: 0 1%;
+                padding: 5px;
+                background-color: white;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+    
+                .food-menu-img{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 12px;
+                    img{
+                        width: 95%;
+                        border-radius: 15px;
+                        transition: all .5s;
+                        &:hover{
+                            cursor: pointer;
+                            transform: scale(1.01);
+                        }
+                    }
+                }
+                .food-menu-desc{
+                    width: 100%;
+                    padding: 10px;
+                    h3{
+                        margin: 0px;
+                        color: #6d604e;
+                    }
+                    .food-detail{
+                        font-size: 13px;
+                        color: #747d8c;
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    .new-data-form{
+        form{
+            padding: 10px;
+            .editMeal-input{
+                margin-bottom: 10px;
+                input{
+                    height: 30px;
+                    width: 85%;
+                    font-size: 17px;
+                    border: 1.9px solid #929292;
+                    border-radius: 4px;
+                }
+            }
+            .editMeal-submit{
+                input{
+                    width: 120px;
+                    height: 30px;
+                    border-radius: 5px; 
+                    color: #282828;
+                    font-size: 15px;
+                    cursor: pointer;
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 500;
+                    background-color: #e3b23c;
+                    border: none;
+                }
+            }
+            
+        }
+    }
+}

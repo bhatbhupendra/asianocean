@@ -1,0 +1,114 @@
+.edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.edit .previous-data {
+  width: 40%;
+}
+
+.edit .previous-data .view {
+  border-right: .5px solid #e4e4e4;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit .previous-data .view .food-menu-box {
+  margin: 0 1%;
+  padding: 5px;
+  background-color: white;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.edit .previous-data .view .food-menu-box .food-menu-img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12px;
+}
+
+.edit .previous-data .view .food-menu-box .food-menu-img img {
+  width: 95%;
+  border-radius: 15px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.edit .previous-data .view .food-menu-box .food-menu-img img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.edit .previous-data .view .food-menu-box .food-menu-desc {
+  width: 100%;
+  padding: 10px;
+}
+
+.edit .previous-data .view .food-menu-box .food-menu-desc h3 {
+  margin: 0px;
+  color: #6d604e;
+}
+
+.edit .previous-data .view .food-menu-box .food-menu-desc .food-detail {
+  font-size: 13px;
+  color: #747d8c;
+  margin: 5px 0;
+}
+
+.edit .new-data-form form {
+  padding: 10px;
+}
+
+.edit .new-data-form form .editMeal-input {
+  margin-bottom: 10px;
+}
+
+.edit .new-data-form form .editMeal-input input {
+  height: 30px;
+  width: 85%;
+  font-size: 17px;
+  border: 1.9px solid #929292;
+  border-radius: 4px;
+}
+
+.edit .new-data-form form .editMeal-submit input {
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  color: #282828;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #e3b23c;
+  border: none;
+}
+/*# sourceMappingURL=edit.css.map */

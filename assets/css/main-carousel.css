@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+.main-carousel .carousel-wrapper {
+  background-image: url(../images/carousel.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.main-carousel .carousel-wrapper .info {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-carousel .carousel-wrapper .info .small {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-carousel .carousel-wrapper .info .large {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-explore {
+  background-color: transparent;
+  border: 2px solid white;
+  margin: 20px;
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  color: white;
+}
+
+.btn-explore:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  background-color: white;
+  color: black;
+}
+
+.btn-explore a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 8px 20px;
+}
+
+@media (max-width: 450px) {
+  .main-carousel .carousel-wrapper .info {
+    left: 45px;
+  }
+}
+/*# sourceMappingURL=main-carousel.css.map */

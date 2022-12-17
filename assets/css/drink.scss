@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+.menu-drinks{
+    .munu-drink-wrapper{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 1% 5%;
+        font-family: 'Noto Sans JP', sans-serif;
+        .drink-box{
+            width: 50%;
+            padding-bottom: 15px;
+            .drink-box-item{
+                h2{
+                    padding-left: 1.4rem;
+                    color: #533833;
+
+                }
+                .wrapper{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    span{
+                        display: block;
+                    }
+                    td{
+                        font-size: 15px;
+                        padding-left: 15px;
+                    }
+                    table{
+                        width: 50%;
+                        #span_name{
+                            font-weight: bold;
+                            font-size: 16px;
+                        }
+                        #span_desc{
+                            font-size: 12px;
+                        }
+                    }
+                    table,td,tr{
+                        // border: 1px solid brown;
+                        border: 2px solid #e1e8f0;
+                        border-collapse: collapse;
+                    }
+                    .owl-carousel-wrapper{
+                        width: 35%;
+                        .owl-carousel .owl-item img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 280px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-drinks{
+        .munu-drink-wrapper{
+            display: flex;
+            flex-direction: column;
+            .drink-box{
+                width: 100%;
+                padding-bottom: 15px;
+                .drink-box-item{
+                    h2{
+                        padding-left: .4rem;
+                        color: #533833;
+    
+                    }
+                    .wrapper{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        td{
+                            font-size: 15px;
+                            padding-left: 15px;
+                        }
+                        table{
+                            width:80%;
+                            margin-bottom: 10px;
+                            #span_name{
+                                font-weight: bold;
+                                font-size: 16px;
+                            }
+                            #span_desc{
+                                font-size: 12px;
+                            }
+                        }
+                        .owl-carousel-wrapper{
+                            width: 80%;
+                            .owl-carousel .owl-item img {
+                                object-fit: cover;
+                                width: 100%;
+                                height: 400px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

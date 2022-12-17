@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+.header{
+    height: 69px;
+    // background-color: #ff5e57;
+    background-color: #3c6382;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    z-index: 100;
+    padding: 0px;
+    .header_wrapper{
+        padding-left: 110px;
+        padding-right: 110px;
+        #nav_toggle{
+            font-size: 30px;
+            // color: #4d312c;
+            color: white;
+            cursor: pointer;
+            display: none;
+        }
+        .header_logo{
+            display: none;
+            img{
+                width: 80px;
+                height: auto;
+            }
+        }
+        .nav_section{
+            width: 100%;
+            .nav_content{
+                font-size: 25px;
+                font-weight: 500;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                #nav_close{
+                    display: none;
+                }
+                .nav_profile{
+                    .nav_logo{
+                        img{
+                            width: 80px;
+                            height: auto;
+                        }
+                    }
+                    .nav_info{
+                        display: none;
+                    }
+                }
+                .nav_menu{
+                    .nav_list{
+                        display: flex;
+                        flex-direction: row !important;
+                        justify-content: space-between !important;
+                        align-items: center !important;
+                        .nav_item{
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            border-radius: 15px; 
+                            transition: all .5s;
+                            &:hover{
+                                // color:#4d312c;
+                                transform: scale(1.15) ;
+                                background-color: #596275;
+                            }
+                        }
+                    }
+                }
+                .social-icon{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-size: 20px;
+                    i{  
+                        //scale and color change effect 
+                        transition: all .5s;
+                        &:hover{
+                            // color:#4d312c;
+                            transform: scale(1.2) ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .header{
+        .header_wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            padding-left: 30px;
+            padding-right: 30px;
+            #nav_toggle{
+                display: inline;
+            }
+            .header_logo{
+                display: inline;
+                img{
+                    width: 80px;
+                    height: auto;
+                }
+            }
+            .nav_section{
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 200px;
+                height: 100vh;
+                z-index: 100;
+                transition:all .5s;
+                background-color: #3c6382;
+
+                .nav_content{
+                    display: flex;
+                    flex-direction: column !important;
+                    justify-content: space-between !important;
+                    align-items: center !important;
+                    #nav_close{
+                        display: inline;
+                        color: #4d312c;
+                        background-color: white;
+                        cursor: pointer;
+                        width: 35px;
+                        height: 35px;
+                        padding: 8px;
+                        padding-left: 10px;
+                        padding-top: 6px;
+                        border-radius: 100%;
+
+                        position: relative;
+                        left: -76px;
+                        top: 9px;
+                    }
+                    .nav_profile{
+                        display: flex;
+                        flex-direction: column;
+                        .nav_logo{
+                            display: flex;
+                            justify-content: center;
+                            img{
+                                width: 100px;
+                                height: auto;
+                            }
+                        }
+                        .nav_info{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            .nav_name{
+                                font-size: 23px;
+                                display: flex;
+                                justify-content: center;
+                                transition:all .5s;
+                                &:hover{
+                                    color:#4d312c ;
+                                }
+                            }
+                            .nav_address{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    .nav_menu{
+                        padding-top: 20px;
+                        .nav_list{
+                            display: flex;
+                            flex-direction: column !important;
+                            justify-content: space-between !important;
+                            align-items: center !important;
+                            font-size: 25px;
+                            .nav_item{
+                                padding-top:3px;
+                                                               a{
+                                    transition:all .5s;
+                                    &:hover{
+                                    //   color:#4d312c ;
+                                      transform: scale(2);
+                                    }
+                                } 
+                            }
+                        }
+                    }
+                    .social{
+                        padding-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+

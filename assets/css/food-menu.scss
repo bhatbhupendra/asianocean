@@ -1,0 +1,176 @@
+.food-menu{
+    background-color: #ececec;
+    padding-top: 10px;
+    // padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        .menu-title{
+            margin: 5px;//resetting h1 margine
+            text-align: center;
+            color: #533833;
+        }
+        .menu-wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+            .food-menu-box{
+                width: 43%;
+                margin: 1%;
+                padding: 2%;
+                background-color: white;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+    
+                .food-menu-img{
+                    width: 40%;
+                    img{
+                        width: 150px;
+                        border-radius: 15px;
+                        transition: all .5s;
+                        &:hover{
+                            cursor: pointer;
+                            transform: scale(1.08);
+                        }
+                    }
+                }
+                .food-menu-desc{
+                    width: 55%;
+                    margin-left: 2%;
+                    h3{
+                        margin: 0px;
+                    }
+                    .food-price{
+                        font-size: 1.2rem;
+                        margin: 5px 0;
+                    }
+                    .food-detail{
+                        font-size: 1rem;
+                        color: #747d8c;
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//mobile responsive
+
+@media screen and (max-width: 768px) {
+    .food-menu{
+        .container{
+            width: 100%;
+            .menu-title{
+                margin: 20px;//resetting h1 margine
+            }
+            .menu-wrapper{
+                .food-menu-box{
+                    width: 90%;
+                    margin: 2%;
+                    padding: 2%;
+                    .food-menu-img{
+                        width: 28%;
+                        img{
+                            width: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+//reusable code 
+
+
+
+.btn-primary-food-menu-item{
+    // background-color: #1e90ff;
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+    border: 0px;//no border
+    transition: all 0.4s;
+    a{
+        text-decoration: none;  
+        color: white;
+    }
+    &:hover{
+        background-color: #ff4757;
+        transform: scale(1.1);
+        //arrow shiding effect
+        i{
+            margin-left: 5px;
+        }
+    }
+}
+
+
+.btn-view-more-food{
+    background-color: #a4908c;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    margin-right: 50px;
+    font-size: 18px;
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    float: right;
+    display: inline-block;
+    border: 0px;//no border
+    transition: all 0.4s;
+    a{
+        text-decoration: none;  
+        color: white;
+    }
+    &:hover{
+        background-color: #4d312c;
+    }
+}
+
+
+
+//for mobile responsive
+@media (max-width: 450px){
+    .food-menu{
+        .container{
+            .menu-wrapper{
+                .food-menu-box{
+                    .food-menu-img{
+
+                    }
+                    .food-menu-desc{
+                        .food-price{
+
+                        }
+                        .food-detail{
+                            font-size: .8rem;
+                        }
+                        .btn-primary-food-menu-item{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

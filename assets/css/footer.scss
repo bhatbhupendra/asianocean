@@ -1,0 +1,106 @@
+footer{
+    background-color: #3c6382;
+    color: white;
+    .footerSection{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 5px;
+        .footerInfo{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-around;
+            .imageWrapper{
+                img{
+                    height: auto;
+                    width: 80px;
+                }
+            }
+            h2{
+                //reset the h2 margin to zero
+                margin: 0px;
+                transition:all .5s;
+                &:hover{
+                    color:#4d312c ;
+                }
+            }
+        }
+        .footerContact{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                //reset the h2 margin to zero
+                margin: 0px;
+                transition:all .5s;
+                &:hover{
+                    color:#4d312c ;
+                }
+            }
+        }
+        .footerQr{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &__info{
+                text-align: center;
+                h3{
+                    //reset the h2 margin to zero
+                    margin: 0px;
+                    transition:all .5s;
+                    &:hover{
+                        color:#4d312c ;
+                    }
+                }
+            }
+            &__scanImg{
+                img{
+                    width: 80px;
+                    height: auto;
+                }
+                transition:all .5s;
+                &:hover{
+                    transform: scale(1.15) ;
+                }
+            }
+        }
+    }
+    .footerStripe{
+        padding: 2px;
+        // background-color: #f34c2b;
+        background-color: #0a3d62;
+
+        &__copyright{
+            text-align: center;
+            p{
+                margin: 0px;
+                .grow{
+                    transition:all .5s;
+                    &:hover{
+                        color:#4d312c ;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 650px){
+    footer{
+        .footerSection{
+            flex-direction: column !important;
+            .footerInfo,.footerContact{
+                padding: 20px 23% 0px 23%;
+                text-align: center;
+
+            }
+            .footerQr{
+                padding: 20px 25% 10px 25%;
+                text-align: center;
+            }
+        }
+    }
+}

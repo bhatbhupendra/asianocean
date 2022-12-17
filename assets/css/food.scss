@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+.food-recomended{
+    background-color: #ececec;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .menu-title{
+            margin: 20px;//resetting h1 margine
+            text-align: center;
+            font-size: 2rem;
+            padding: 0 30px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: #ff7256;
+            color: white;
+        }
+        .menu-wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+            .food-menu-box{
+                width: 18%;
+                margin: 0 1%;
+                padding: 5px;
+                background-color: white;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+    
+                .food-menu-img{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 12px;
+                    img{
+                        width: 80%;
+                        border-radius: 15px;
+                        transition: all .5s;
+                        &:hover{
+                            cursor: pointer;
+                            transform: scale(1.01);
+                        }
+                    }
+                }
+                .food-menu-desc{
+                    width: 100%;
+                    padding: 10px;
+                    h3{
+                        margin: 0px;
+                        color: #6d604e;
+                    }
+                    .food-detail{
+                        font-size: 13px;
+                        color: #747d8c;
+                        margin: 5px 0;
+                    }
+                    .price-button-wrapper{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0px 5px;
+                        .food-price{
+                            color: #6d604e;
+                            font-size: 1rem;
+                            margin: 5px 0;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.food-section{
+    padding: 10px 6%;
+    background-color: #ececec;
+    font-family: 'Noto Sans JP', sans-serif;
+    .container{
+        padding: 20px 0;
+        background-color: white;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        .title{
+            padding: 3px;
+            padding-left: 7%;
+            color: #533833;
+        }
+        .food-wrapper{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 0 8%;
+            .food-box{
+                width: 50%;
+                padding-bottom: 15px;
+                .sub-title{
+                    padding-bottom: 5px;
+                    color: #533833;
+                }
+                table{
+                    font-size: 13px;
+                    tr{
+                        padding-bottom: 10px;
+                    }
+                    #td_sn{
+                        width: 7%;
+                    }
+                    #td_image{
+                        width: 20%;
+                    }
+                    #td_name_desc{
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 0.5rem;
+                        padding-left: 5px;
+                        font-weight: bold;
+                        #span_desc{
+                            font-size: 10px;
+                            font-weight: 300;
+                        }
+                    }
+                    #td_price{
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//mobile responsive
+
+@media screen and (max-width: 768px) {
+    .food-recomended{
+        .container{
+            width: 90%;
+            .menu-title{
+                margin: 20px;//resetting h1 margine
+            }
+            .menu-wrapper{
+                .food-menu-box{
+                    width: 90%;
+                    margin: 2%;
+                    padding: 2%;
+                    .food-menu-img{
+                        width: 100%;
+                        img{
+                            width: 89%;
+                        }
+                    }
+                    .food-menu-desc{
+                        .price-button-wrapper{
+                            padding: 0px 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .food-section{
+        display: flex;
+        justify-content: center;
+        .container{
+            width: 90%;
+            .title{
+            }
+            .food-wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .food-box{
+                    width: 100%;
+                    .sub-title{}
+                    table{
+                        width: 100%;
+                        #td_sn{
+                        }
+                        #td_image{
+                        }
+                        #td_name_desc{
+                        }
+                        #td_price{
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//reusable code 
+
+
+
+.btn-primary-food-menu-item{
+    // background-color: #1e90ff;
+    background-color: #97856c;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 6px;
+    display: inline-block;
+    border: 0px;//no border
+    transition: all 0.4s;
+    a{
+        text-decoration: none;  
+        color: white;
+    }
+    &:hover{
+        background-color: #6d604e;
+        transform: scale(1.08);
+    }
+}

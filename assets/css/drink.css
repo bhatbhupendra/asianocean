@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+.menu-drinks .munu-drink-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1% 5%;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.menu-drinks .munu-drink-wrapper .drink-box {
+  width: 50%;
+  padding-bottom: 15px;
+}
+
+.menu-drinks .munu-drink-wrapper .drink-box .drink-box-item h2 {
+  padding-left: 1.4rem;
+  color: #533833;
+}
+
+.menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper span {
+  display: block;
+}
+
+.menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper td {
+  font-size: 15px;
+  padding-left: 15px;
+}
+
+.menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper table {
+  width: 50%;
+}
+
+.menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper table #span_name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper table #span_desc {
+  font-size: 12px;
+}
+
+.menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper table, .menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper td, .menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper tr {
+  border: 2px solid #e1e8f0;
+  border-collapse: collapse;
+}
+
+.menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper .owl-carousel-wrapper {
+  width: 35%;
+}
+
+.menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper .owl-carousel-wrapper .owl-carousel .owl-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 280px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-drinks .munu-drink-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-drinks .munu-drink-wrapper .drink-box {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .menu-drinks .munu-drink-wrapper .drink-box .drink-box-item h2 {
+    padding-left: .4rem;
+    color: #533833;
+  }
+  .menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper td {
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  .menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper table {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper table #span_name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper table #span_desc {
+    font-size: 12px;
+  }
+  .menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper .owl-carousel-wrapper {
+    width: 80%;
+  }
+  .menu-drinks .munu-drink-wrapper .drink-box .drink-box-item .wrapper .owl-carousel-wrapper .owl-carousel .owl-item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 400px;
+  }
+}
+/*# sourceMappingURL=drink.css.map */

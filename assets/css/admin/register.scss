@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f6f3f9;
+    .form_wrapper{
+        background: rgb(243, 243, 243);
+        width: 450px;
+        border-radius: 15px;
+        box-shadow: 0 0 90px 15px rgba(0, 0, 0, 0.1), 10px 20px 64px -48px rgba(0, 0, 0, 0.5); // box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+        padding: 15px 20px 20px 20px;
+        header{
+            font-size: 25px;
+            font-weight: 500;
+            padding-bottom: 8px;
+        }
+        form{
+            .name-details{
+                display: flex;
+            }
+            //all fields inside form excluding name_detail field
+            .field{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 5px;
+                position: relative;//this is relative for eye to be absulate with respect to this field
+                i{
+                    position: absolute;
+                    font-size: 15px;
+                    right: 20px;
+                    color: #ccc;
+                    top: 34px;
+                    cursor: pointer;
+                }
+            }
+            .button_submit{
+                input{
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                    height: 35px;
+                    border: none;
+                    font-size: 15px;
+                    font-weight: 400;
+                    background: #333;
+                    color: #fff;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+            }            
+        }
+        .error-txt{
+            color: #721c24;
+            background: #f8d7da;
+            padding: 2px 8px;
+            margin-top: 5px;
+            text-align: center;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px solid #f5c6cb;
+        }
+        .link {
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+            :hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+//input field
+#firstName,#lastName,#email,#password,#confirm_password{
+    height: 35px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 15px;
+    border:1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+}
+
+// field div of name-details
+.name-details .first_name{
+    padding-right: 8px;
+}
+.last_name{
+    padding-left: 8px;
+}
+
+//eye
+i.active_eye::before{
+    color: rgb(94, 94, 94);
+    content: "\f070";
+}
