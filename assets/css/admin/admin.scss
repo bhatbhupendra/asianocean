@@ -118,7 +118,7 @@ a{
                         background-color: #edf2f6;
                     }
                     td{
-                        padding: 3px 20px;
+                        padding: 3px 10px;
                     }
                     table{
                         width: 100%;
@@ -286,10 +286,16 @@ a{
                         background-color: #edf2f6;
                     }
                     td{
-                        padding: 3px 20px;
+                        padding: 3px 10px;
                     }
                     table{
                         width: 100%;
+                    }
+                    #price{
+                        width: 15%;
+                    }
+                    #button{
+                        width: 30%;
                     }
                 
                 }
@@ -510,11 +516,29 @@ a{
 .view-button{
     background-color: #3E6D9C;
     border: 0;
-    height: 40px;
-    height: 33px;
-    width: 90px;
-    font-size: 15px;
+    // height: 33px;
+    // width: 90px;
+    // font-size: 15px;
+    height: 30px;
+    width: 60px;
+    font-size: 12px;
     border-radius: 5px;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    a{
+        color: inherit;
+    }
+}
+
+.recommend-button{
+    background-color: #3E6D9C;
+    border: 0;
+    height: 30px;
+    width: 100px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 0 10px;
     color: white;
     display: inline-block;
     cursor: pointer;
@@ -526,10 +550,12 @@ a{
 .delete-button{
     background-color: #E94560;
     border: 0;
-    height: 40px;
-    height: 33px;
-    width: 90px;
-    font-size: 15px;
+    // height: 33px;
+    // width: 90px;
+    // font-size: 15px;
+    height: 30px;
+    width: 60px;
+    font-size: 12px;
     border-radius: 5px;
     color: white;
     display: inline-block;
@@ -617,8 +643,15 @@ a{
     }
 }
 
+//The main menu td css properties
 
 #td_name_desc{
     display: flex;
     flex-direction: column;
+}
+#td_button{
+    width: 25%;
+}
+#td_price{
+    width: 14%;
 }

@@ -24,13 +24,24 @@
 
     
     if(isset($_GET['delete_id'])){
-        $meal_id = (int)$_GET['delete_id'];
-        $adminObj->removeMeal($meal_id);
+        $shouldProceed = $adminObj->prompt("Do you wanna Delete?(y/n):");
+        if (strtolower(trim($shouldProceed)) == 'y'){
+            $meal_id = (int)$_GET['delete_id'];
+            $adminObj->removeMeal($meal_id);
+        }
+        else{
+            exit;
+        }
     }
 
     if(isset($_GET['unrec_id'])){
         $meal_id = (int)$_GET['unrec_id'];
         $mealDetail = $adminObj->unrecommend($meal_id);
+    }
+
+    if(isset($_GET['rec_id'])){
+        $meal_id = (int)$_GET['rec_id'];
+        $mealDetail = $adminObj->recommend($meal_id);
     }
 
     if(isset($_GET['delete_category_id'])){
@@ -129,10 +140,10 @@
                                     <td><img src="assets/uploads/<?php echo $row['image_url'] ?>" height="60" alt=""></td>
                                     <td id="td_name_desc">
                                         <span id="span_desc_id"><?php echo $row['name'] ?></span>
-                                        <span id="span_desc_id"><?php echo $row['description'] ?></span>
+                                        <span id="span_desc_id"><?php echo mb_strimwidth($row['description'],0,40,"...") ?></span>
                                     </td>
-                                    <td>¥ <?php echo $row['price'] ?></td>
-                                    <td>
+                                    <td id="td_price">¥ <?php echo $row['price'] ?></td>
+                                    <td id="td_button">
                                         <button class="view-button" type="button">
                                             <a href="admin.php?view_id=<?php echo $row['meal_id'] ?>">View</a>
                                         </button>
@@ -159,6 +170,11 @@
                                         <?php echo $mealDetail['description'] ?>
                                     </p>      
                                 </div>
+                                <div class="button" style=>
+                                    <button class="recommend-button" type="button">
+                                        <a href="admin.php?rec_id=<?php echo $mealDetail['meal_id'] ?>">Recommend</a>
+                                    </button>
+                                </div>
                             <?php }else{ echo "Preview" ;} ?>
                         </div>
                     </div>
@@ -177,7 +193,7 @@
                 
                                 <div class="food-menu-desc">
                                     <h4><?php echo $row['name'] ?></h4>
-                                    <p class="food-detail"><?php echo $row['description'] ?></p>
+                                    <p class="food-detail"><?php echo mb_strimwidth($row['description'],0,40,"...") ?></p>
                                     <div class="price-button-wrapper">
                                         <p class="food-price"><?php echo $row['price'] ?>¥</p>
                                         <button class="btn-primary-food-menu-item">
@@ -201,8 +217,8 @@
                                         <td><?php echo $SN ?></td>
                                         <td><img src="assets/uploads/<?php echo $row['image_url'] ?>" height="60" alt=""></td>
                                         <td><?php echo $row['name'] ?></td>
-                                        <td>¥ <?php echo $row['price'] ?></td>
-                                        <td>
+                                        <td id="price">¥ <?php echo $row['price'] ?></td>
+                                        <td id="button">
                                             <button class="view-button" type="button">
                                                 <a href="edit.php?edit_id=<?php echo $row['meal_id'] ?>">Edit</a>
                                             </button>

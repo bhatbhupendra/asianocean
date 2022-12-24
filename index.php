@@ -81,24 +81,26 @@
                 <?php $foodData = $adminObj->getMenuFood(); ?> 
                 <?php $SN = 1 ?>
                 <?php foreach($foodData as $row){ ?>
-                    <div class="food-menu-box">
-                        <div class="food-menu-img">
-                            <img src="assets/uploads/<?php echo $row['image_url'] ?>" alt="<?php echo $row['name'] ?>" >
+                    <?php if($SN<=4){ ?>
+                        <div class="food-menu-box">
+                            <div class="food-menu-img">
+                                <img src="assets/uploads/<?php echo $row['image_url'] ?>" alt="<?php echo $row['name'] ?>" >
+                            </div>
+            
+                            <div class="food-menu-desc">
+                                <h3><?php echo $row['name'] ?></h3>
+                                <p class="food-price"><?php echo $row['price'] ?> ¥</p>
+                                <p class="food-detail">
+                                    <?php echo $row['description'] ?>
+                                </p>
+                                
+            
+                                <button class="btn-primary-food-menu-item">
+                                    <a href="">今すぐ注文</a>
+                                </button>
+                            </div>
                         </div>
-        
-                        <div class="food-menu-desc">
-                            <h3><?php echo $row['name'] ?></h3>
-                            <p class="food-price"><?php echo $row['price'] ?> ¥</p>
-                            <p class="food-detail">
-                                <?php echo $row['description'] ?>
-                            </p>
-                            
-        
-                            <button class="btn-primary-food-menu-item">
-                                <a href="">今すぐ注文</a>
-                            </button>
-                        </div>
-                    </div>
+                    <?php } ?>
                     <?php $SN += 1 ?>  
                 <?php } ?>
             </div>
@@ -121,24 +123,26 @@
                 <?php $drinkData = $adminObj->getMenuDrink(); ?>
                 <?php $SN = 1 ?>
                 <?php foreach($drinkData as $row){ ?>
-                    <div class="food-menu-box">
-                        <div class="food-menu-img">
-                            <img src="assets/uploads/<?php echo $row['image_url'] ?>" alt="<?php echo $row['name'] ?>" class="img-responsive img-curve">
+                    <?php if($SN<=4){ ?>
+                        <div class="food-menu-box">
+                            <div class="food-menu-img">
+                                <img src="assets/uploads/<?php echo $row['image_url'] ?>" alt="<?php echo $row['name'] ?>" class="img-responsive img-curve">
+                            </div>
+            
+                            <div class="food-menu-desc">
+                                <h3><?php echo $row['name'] ?></h3>
+                                <p class="food-detail">
+                                    <?php echo $row['description'] ?>
+                                </p>
+                                <div class="price-button-wrapper">
+                                    <p class="food-price"><?php echo $row['price'] ?>¥</p>
+                                    <button class="btn-primary-food-menu-item">
+                                        <a href="">今すぐ注文</a>
+                                    </button>
+                                </div>      
+                            </div>
                         </div>
-        
-                        <div class="food-menu-desc">
-                            <h3><?php echo $row['name'] ?></h3>
-                            <p class="food-detail">
-                                <?php echo $row['description'] ?>
-                            </p>
-                            <div class="price-button-wrapper">
-                                <p class="food-price"><?php echo $row['price'] ?>¥</p>
-                                <button class="btn-primary-food-menu-item">
-                                    <a href="">今すぐ注文</a>
-                                </button>
-                            </div>      
-                        </div>
-                    </div>
+                    <?php } ?> 
                     <?php $SN += 1 ?>  
                 <?php } ?> 
             </div>
